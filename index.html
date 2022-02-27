@@ -6,11 +6,11 @@
   <body>
     <div>
       <label>Введите исходное сообщение:</label>
-      <input id="message" type="text"/>
+      <input id="message" type="text" required placeholder="Сообщение"/>
       <label>Введите гамму:</label>
-      <input id="gamma" type="text"/>
+      <input id="gamma" type="text" required placeholder="Гамма"/>
       <label>Результат:</label>
-      <input id="result" type="text" readonly/>
+      <input id="result" type="text" readonly required placeholder="Результат"/>
     </div>
     <button onclick="GammaCoding()">Шифровать</button>
     <button onclick="Decryption()">Дешифровать</button>
