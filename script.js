@@ -28,12 +28,11 @@ function GammaCoding() {
     }
     res += alf[z];
   }
-  crypt=res;
-  alert(crypt);
+  document.getElementById('result').value = res;
 }
 
 function Decryption() {
-  let source = crypt;
+  let source = document.getElementById('message').value;
   let key = document.getElementById('gamma').value;            
   res='';
 
@@ -58,5 +57,5 @@ function Decryption() {
     }
     res += alf[z];
   }
-  alert(res);
+  document.getElementById('result').value = res;
 }
